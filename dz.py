@@ -8,6 +8,7 @@ print(d - c)
 print('Task 2')
 x = 'You are '
 y = 'awesome'
-print(x + y)
+z = x + y
+print(z)
 print('Task 3')
 
