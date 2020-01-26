@@ -6,7 +6,7 @@ print(d / b)
 print(a * c)
 print(d - c)
 print('Task 2')
-x = 'You are '
+x = 'You\'re '
 y = 'awesome'
 z = x + y
 print(z)
