@@ -19,5 +19,6 @@ Start = 9
 Stop = 99
 limit = 10
 list = [random.randint(Start, Stop) for iter in range(limit)]
+print(list)
 del list[-1]
 print(list)
