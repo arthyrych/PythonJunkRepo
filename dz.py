@@ -10,5 +10,5 @@ x = 'You\'re '
 y = 'awesome'
 z = x + y
 print(z)
-# print('Task 3')
-
+print('Task 3')
+print('Hello')
