@@ -6,19 +6,18 @@ A = input()
 B = input()
 C = input()
 print(A, B, C)
-if A > B:
+if int(A) > int(B):
     print('Svershilos!')
-elif B > A:
+elif int(B) > int(A):
     print('Da nu!')
-elif A == B:
+elif int(A) == int(B):
     print('A esli tak?')
     A = int(A) + int(C)
     B = int(B) - int(C)
-    if A > B:
+    if int(A) > int(B):
      print('Svershilos!')
-    elif B > A:
+    elif int(B) > int(A):
      print('Da nu!')
 
 print('\nTask 2 with WHILE:')
-
 
