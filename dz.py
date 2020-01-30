@@ -20,7 +20,6 @@ elif int(A) == int(B):
      print('Da nu!')
 
 print('\nTask 2 with WHILE:')
-
 print('\nEnter A, B, C each one from the new line and press ENTER')
 A = input()
 B = input()
