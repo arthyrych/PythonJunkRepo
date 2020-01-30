@@ -21,3 +21,14 @@ elif int(A) == int(B):
 
 print('\nTask 2 with WHILE:')
 
+print('\nEnter A, B, C each one from the new line and press ENTER')
+A = input()
+B = input()
+C = input()
+print(A, B, C)
+while int(A) < int(B):
+    print('The value is ' + str(A) + '! Still not yet!')
+    if int(A) > int(B):
+        print('Finally!' + ' Final ' + str(A))
+        break
+    A = int(A) + int(C)
