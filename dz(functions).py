@@ -13,6 +13,6 @@ def mylist(x, y):
     print(thislist)
 
 
-mylist(10, 7)
+mylist(50, 7)
 
 print('Function 2\n')
