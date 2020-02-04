@@ -48,14 +48,18 @@ kapusta(int(input(x)))
 # этом что бы программа не закрывалась, а закрывалась только тогда когда при вводе числа ты как бы ввел пустую
 # строку(просто нажав Enter)
 print('\nTask 4. Is your number even or odd?')
-x = 'Enter the number: '
 
 
-def pizdos(cho):
-    while cho % 2 == 0:
-        print(cho, 'is an even number.')
-    while cho % 2 != 0:
-        print(cho, 'is an odd number.')
+def pizdos():
+    while True:
+        x = (input('Enter the number: '))
+        if not x:
+            print('Program is closed.')
+            break
+        elif int(x) % 2 == 0:
+            print(x, 'is an even number.')
+        else:
+            print(x, 'is an odd number.')
 
 
-pizdos(int(input(x)))
+pizdos()
