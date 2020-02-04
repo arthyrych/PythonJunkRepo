@@ -47,12 +47,15 @@ kapusta(int(input(x)))
 # вводит число и это число проверяется на четность и сообщает об этом пользователю при
 # этом что бы программа не закрывалась, а закрывалась только тогда когда при вводе числа ты как бы ввел пустую
 # строку(просто нажав Enter)
-print('\nTask 4. Getting an average.')
+print('\nTask 4. Is your number even or odd?')
 x = 'Enter the number: '
 
 
 def pizdos(cho):
-    print(cho)
+    while cho % 2 == 0:
+        print(cho, 'is an even number.')
+    while cho % 2 != 0:
+        print(cho, 'is an odd number.')
 
 
 pizdos(int(input(x)))
