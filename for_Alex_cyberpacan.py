@@ -52,7 +52,7 @@ print('\nTask 4. Is your number even or odd?')
 
 def pizdos():
     while True:
-        x = (input('Enter the number: '))
+        x = input('Enter the number: ')
         if not x:
             print('Program is closed.')
             break
