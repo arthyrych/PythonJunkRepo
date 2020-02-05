@@ -90,3 +90,59 @@ while True:
 set_user_list(user_list_length, user_list_arg_length)
 
 print('\nFunction 3\n')
+# Необходимо написать функцию, которая будет сравнивать два списка
+# после чего анализировать и выводить одинаковые значения
+
+user_list = []
+user_list_2 = []
+LENGTH_USER_LIST = 'Enter the length of the first list: '
+LENGTH_USER_LIST_ARG = 'Enter the MAX value of an arg in the first list: '
+LENGTH_USER_LIST_2 = 'Enter the length of the second list: '
+LENGTH_USER_LIST_ARG_2 = 'Enter the MAX value of an arg in the second list: '
+
+
+def set_user_list(list_length, arg_length):
+    for i in range(list_length):
+        print("Enter the value of ", i, " element: ")
+        while True:
+            arg = input()
+            if not arg:
+                print("Error. Enter the value from ", 0, " to ", arg_length)
+                continue
+            if int(arg) > arg_length:
+                print("Error. Enter the value from ", 0, " to ", arg_length)
+                continue
+            else:
+                user_list.append(arg)
+                print("Accepted!")
+                break
+
+
+def set_user_list_2(list_length, arg_length):
+    for i in range(list_length):
+        print("Enter the value of ", i, " element: ")
+        while True:
+            arg = input()
+            if not arg:
+                print("Error. Enter the value from ", 0, " to ", arg_length)
+                continue
+            if int(arg) > arg_length:
+                print("Error. Enter the value from ", 0, " to ", arg_length)
+                continue
+            else:
+                user_list_2.append(arg)
+                print("Accepted!")
+                break
+
+
+def check_it():
+    for x in user_list:
+        if x in user_list_2:
+            print('The following value is in both lists:', x)
+
+
+set_user_list(int(input(LENGTH_USER_LIST)), int(input(LENGTH_USER_LIST_ARG)))
+print('\nThe first list is:', user_list, '\n')
+set_user_list_2(int(input(LENGTH_USER_LIST_2)), int(input(LENGTH_USER_LIST_ARG_2)))
+print('\nThe second list is:', user_list_2, '\n')
+check_it()
