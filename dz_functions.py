@@ -91,10 +91,11 @@ set_user_list(user_list_length, user_list_arg_length)
 
 print('\nFunction 3\n')
 # Необходимо написать функцию, которая будет сравнивать два списка
-# после чего анализировать и выводить одинаковые значения
+# после чего анализировать и создавать новый список с одинаковыми значеними
 
 user_list = []
 user_list_2 = []
+user_list_3 = []
 LENGTH_USER_LIST = 'Enter the length of the first list:'
 LENGTH_USER_LIST_ARG = 'Enter the MAX value of an arg in the first list:'
 LENGTH_USER_LIST_2 = 'Enter the length of the second list:'
@@ -138,7 +139,7 @@ def set_user_list_2(list_length, arg_length):
 def check_it():
     for x in user_list:
         if x in user_list_2:
-            print('The following value is in both lists:', x)
+            user_list_3.append(x)
 
 
 set_user_list(int(input(LENGTH_USER_LIST)), int(input(LENGTH_USER_LIST_ARG)))
@@ -146,3 +147,4 @@ print('\nThe first list is:', user_list, '\n')
 set_user_list_2(int(input(LENGTH_USER_LIST_2)), int(input(LENGTH_USER_LIST_ARG_2)))
 print('\nThe second list is:', user_list_2, '\n')
 check_it()
+print('Here is a new list with the same values:',user_list_3)
