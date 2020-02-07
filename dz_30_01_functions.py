@@ -96,10 +96,10 @@ print('\nFunction 3\n')
 user_list = []
 user_list_2 = []
 user_list_3 = []
-LENGTH_USER_LIST = 'Enter the length of the first list:'
-LENGTH_USER_LIST_ARG = 'Enter the MAX value of an arg in the first list:'
-LENGTH_USER_LIST_2 = 'Enter the length of the second list:'
-LENGTH_USER_LIST_ARG_2 = 'Enter the MAX value of an arg in the second list:'
+LENGTH_USER_LIST = 'Enter the length of the first list: '
+LENGTH_USER_LIST_ARG = 'Enter the MAX value of an arg in the first list: '
+LENGTH_USER_LIST_2 = 'Enter the length of the second list: '
+LENGTH_USER_LIST_ARG_2 = 'Enter the MAX value of an arg in the second list: '
 
 
 def set_user_list(list_length, arg_length):
@@ -147,4 +147,4 @@ print('\nThe first list is:', user_list, '\n')
 set_user_list_2(int(input(LENGTH_USER_LIST_2)), int(input(LENGTH_USER_LIST_ARG_2)))
 print('\nThe second list is:', user_list_2, '\n')
 check_it()
-print('Here is a new list with the same values:',user_list_3)
+print('Here is a new list with the same values:', user_list_3)
