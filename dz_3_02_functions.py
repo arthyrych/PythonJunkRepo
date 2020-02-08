@@ -26,3 +26,28 @@ print('\n', my_cars)
 print('Function 2\n')
 # Нужно написать функцию, которая позволит Вам конвертировать
 # указанное Вами число секунд в формат записи дни:часы:минуты:секунды
+def time(x):
+    dd = x // 86400
+    ost = x % 86400
+    hh = ost // 3600
+    ost = ost % 3600
+    mm = ost // 60
+    ost = ost % 60
+    ss = ost
+    print('Time is', dd, ':', hh, ':', mm, ':', ss)
+    
+    
+time (int(input('Enter the amount of seconds which will be converted into dd/hh/mm/ss:')))
+
+print('\nFunction 3 and it is the same as the previous one\n')
+# Нужно написать функцию, которая позволит Вам конвертировать
+# указанное Вами число секунд в формат записи дни:часы:минуты:секунды
+from datetime import timedelta
+
+
+def convert(input_second):
+    d = timedelta(seconds=input_second)
+    print(d)
+
+
+convert(int(input("Enter seconds: ")))
