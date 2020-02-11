@@ -5,13 +5,12 @@ print('Function 3\n')
 # 1 + 2 + 3 = 6.
 # Результат суммирования - в консоль.
 
-x = input('Enter the number to sum it: ')
 
-
-def summa(y):
+def summa(x):
+    y = 0
     for char in x:
         y += int(char)
     print('The sum of chars in', x, 'is', y)
 
 
-summa(0)
+summa(input('Enter the number to sum it: '))
