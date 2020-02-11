@@ -17,3 +17,20 @@ def amount(our_str):
 
 
 amount(input('Enter a string to sum \'a\' symbols in it: '))
+
+# Нужно написать функцию, которая будет считать сколько раз символ встречается в строке.
+# Например, в строке "Денис даёт нам классные задачки, которые помогут нам найти лучшую работу!"
+# символ "е" встречается 3 раза.
+
+
+def amount_mega(sentence):
+    our_shit = {}
+    for char in sentence:
+        symbol_value = 1
+        if char in our_shit:
+            symbol_value = our_shit[char] + 1
+        our_shit[char] = symbol_value
+    print(our_shit)
+
+
+amount_mega(input('Enter a sentence to count it\'s symbols in it: '))
