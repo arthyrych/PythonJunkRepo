@@ -3,22 +3,16 @@
 # 3) Напишите простой конвертер валют (без возможности динамического выбора валют пользователем).
 # Валюты заданы хардкодом и не изменяются. Тип валют на выбор программиста.
 # тут обычная арифметика но можешь задать это что бы каждое задание это было новая функция
-
 print('Task 1. Getting an average.')
-x = 'Enter the first number: '
-y = 'Enter the second number: '
 
 
 def average(first, second):
     print('The average from', first, 'and', second, 'is', (first + second) / 2)
 
 
-average(int(input(x)), int(input(y)))
+average(int(input('Enter the first number: ')), int(input('Enter the second number: ')))
 
 print('\nTask 2. Getting sum and multiplication.')
-x = 'Enter the first number: '
-y = 'Enter the second number: '
-z = 'Enter the third number: '
 
 
 def user_sum(first, second, third):
@@ -29,19 +23,21 @@ def multiplication(first, second, third):
     print('The multiplication from', first, 'and', second, 'and', third, 'is', first * second * third)
 
 
-user_sum(int(input(x)), int(input(y)), int(input(z)))
-multiplication(int(input(x)), int(input(y)), int(input(z)))
+user_sum(int(input('Enter the first number: ')),
+         int(input('Enter the second number: ')),
+         int(input('Enter the third number: ')))
+multiplication(int(input('Enter the first number: ')),
+               int(input('Enter the second number: ')),
+               int(input('Enter the third number: ')))
 
 print('\nTask 3. Money exchange UAH to USD.')
-
-x = 'Enter the amount in UAH (Ukrainian Hryvnya): '
 
 
 def kapusta(bablo):
     print(bablo, 'in USD (US dollars) will be', bablo / 24.1)
 
 
-kapusta(int(input(x)))
+kapusta(int(input('Enter the amount in UAH (Ukrainian Hryvnya): ')))
 
 # Сделай функцию которая вызывает у себя в теле бесконечный цикл в котором пользователь
 # вводит число и это число проверяется на четность и сообщает об этом пользователю при
@@ -52,7 +48,7 @@ print('\nTask 4. Is your number even or odd?')
 
 def pizdos():
     while True:
-        x = input('Enter the number: ')
+        x = input('Enter the number or press ENTER to close it: ')
         if not x:
             print('Program is closed.')
             break
