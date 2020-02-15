@@ -8,3 +8,14 @@ print('Homework 7. Let's create a database.\n')
 # Таблица Должность
 # Работник - главная таблица, на которую передают данные остальные.
 # В каждой таблице должен быть праймари ки (основной ключ). В каждой таблице минимум три столбца с любым типом данных.
+import sqlite3
+
+conn = sqlite3.connect('my_first_database.db')
+cursor = conn.cursor()
+
+cursor.execute('''CREATE TABLE employee (id, first_name, last_name)''')
+cursor.execute('''CREATE TABLE salary (id, salary, salary_in_USD)''')
+cursor.execute('''CREATE TABLE position (id, position, experience)''')
+
+cursor.close()
+conn.close()
