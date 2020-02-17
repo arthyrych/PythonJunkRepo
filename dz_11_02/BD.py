@@ -1,4 +1,4 @@
-print('Homework 7. Let's create a database.\n')
+print('Homework 7. Let\'s create a database.\n')
 
 # Необходимо создать базу данных на языке пайтон.
 # Для этого, необходимо импортировать библиотеку SQLite.
