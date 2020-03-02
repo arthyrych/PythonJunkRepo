@@ -4,7 +4,11 @@
 # После третьего значения должно произойти арифметическая операция первого и второго значения
 
 
-def calc(first, second, action):
+def calc():
+    print('This is our calculator!')
+    first = int(input('Enter the first number: '))
+    second = int(input('Enter the second number: '))
+    action = input('Enter the action (+ or - or * or /): ')
     final = 0
     if action == '+':
         final = first + second
@@ -19,30 +23,27 @@ def calc(first, second, action):
     print('The result is:', first, action, second, '=', final)
 
 
-print('This is our calculator!')
-calc(int(input('Enter the first number: ')),
-     int(input('Enter the second number: ')),
-     input('Enter the action (+ or - or * or /): '))
+calc()
 
 # Написать функцию которая будет подсчитывать сколько четных и нечетных чисел в диапазоне который нужно ввести
 # Также найдите сумму всех четных и сумму всех нечетных чисел отдельно
 
 
-def new_fun(begin, end):
+def new_fun():
+    print('Let\'s count the amount of even and odd numbers! Also we will sum their values!')
+    begin = int(input('Enter the number to count from: '))
+    end = int(input('Enter the number to count till: '))
     chet = 0
     nechet = 0
     sum_chet = 0
     sum_nechet = 0
-    while True:
-        if begin > end:
-            break
+    while begin <= end:
+        if begin % 2 == 0:
+            sum_chet += begin
+            chet += 1
         else:
-            if begin % 2 == 0:
-                sum_chet += begin
-                chet += 1
-            else:
-                sum_nechet += begin
-                nechet += 1
+            sum_nechet += begin
+            nechet += 1
         begin += 1
     print('The amount of even numbers between them is:', chet)
     print('The amount of odd numbers between them is:', nechet)
@@ -50,6 +51,4 @@ def new_fun(begin, end):
     print('The sum of odd numbers between them is:', sum_nechet)
 
 
-print('Let\'s count the amount of even and odd numbers! Also we will sum their values!')
-new_fun(int(input('Enter the number to count from: ')),
-        int(input('Enter the number to count till: ')))
+new_fun()
