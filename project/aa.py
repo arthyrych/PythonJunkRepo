@@ -1,5 +1,6 @@
-def greeting(name):
-    print("Hello, " + name)
+def greeting():
+    name = input('Enter your name: ')
+    print('Hello,', name, '!')
 
 
 def new_fun():
@@ -18,8 +19,6 @@ def new_fun():
             sum_nechet += begin
             nechet += 1
         begin += 1
-    print('The amount of even numbers between them is:', chet)
-    print('The amount of odd numbers between them is:', nechet)
-    print('The sum of even numbers between them is:', sum_chet)
-    print('The sum of odd numbers between them is:', sum_nechet)
+    print('The amount of even numbers between them is', chet, 'and sum of even numbers is', sum_chet)
+    print('The amount of odd numbers between them is', nechet, 'and sum of odd numbers is', sum_nechet)
 

@@ -1,4 +1,4 @@
 import aa
 
 
-aa.new_fun()
+aa.greeting()
