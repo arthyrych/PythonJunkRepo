@@ -1,4 +1,4 @@
-import for_alex
+import aa
 
-for_alex.new_fun(11, 15)
+aa.greeting('Bob')
 

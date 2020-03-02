@@ -1,1 +1,2 @@
-import for_alex
+def greeting(name):
+    print("Hello, " + name)
