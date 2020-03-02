@@ -1,11 +1,10 @@
-print('Homework 4\n')
-
-print('Function 1\n')
 # Необходимо создать функцию, которая будет принимать два аргумента от
 # пользователя и на основании этих аргументов создавать список.
 # Первый аргумент - определяет длину списка
 # Второй аргумент - определяет максимально возможное значение элемента списка
 
+
+print('Function 1\n')
 user_list = []
 LENGTH_USER_LIST = 'Enter the length of the list: '
 LENGTH_USER_LIST_ARG = 'Enter the MAX value of an arg in the list: '

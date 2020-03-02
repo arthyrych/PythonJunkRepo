@@ -1,13 +1,9 @@
-print('Homework 3\n')
-# print('Task 1 with FOR:')
-print('\nTask 2 with WHILE:')
-print('\nEnter A, B, C each one from the new line and press ENTER')
-A = int(input())
-B = int(input())
-C = int(input())
+A = int(input('Enter A: '))
+B = int(input('Enter B: '))
+C = int(input('Enter C: '))
 print(A, B, C)
 while A <= B:
     print('The value is ' + str(A) + '! Still not yet!')
-    A = A + C
+    A += C
     if A > B:
         print('Finally!' + ' Final ' + str(A) + '!')

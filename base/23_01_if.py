@@ -1,20 +1,16 @@
-print('Homework 3\n')
-
-print('Fill in A, B, C (each one from the new line and press Enter)')
-A = int(input())
-B = int(input())
-C = int(input())
+A = int(input('Fill in A: '))
+B = int(input('Fill in B: '))
+C = int(input('Fill in C: '))
 print(A, B, C)
 if A > B:
-    print('Finally!')
+    print('Finally!', A, '>', B)
 elif B > A:
-    print('Oh, shit!')
+    print('Oh, no!', B, '>', A)
 else:
     print('What if?')
-    A = A + C
-    B = B - C
+    A += C
+    B -= C
     if A > B:
-        print('Finally!')
+        print('Finally!', A, '>', B)
     else:
-        print('Oh, shit!')
-print('Happy end!')
+        print('Oh, no!', B, '>', A)
