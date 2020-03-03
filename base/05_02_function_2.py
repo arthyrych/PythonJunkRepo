@@ -1,9 +1,6 @@
-print('Homework 6\n')
-
-print('\nFunction 2\n')
+print('Function 2')
 # Найдите три ключа с самыми высокими значениями в словаре
-# my_dict = {'a':645, 'b':3987, 'c': 093,'d':111, 'e':646, 'f': 20}
-my_dict = {'a': 645, 'b': 3987, 'c': 93,'d': 111, 'e': 646, 'f': 20}
+my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
 x = my_dict['a']
 for key, value in my_dict.items():
     if value > x:
@@ -20,9 +17,7 @@ print(x, y, z)
 
 # Найдите три ключа с самыми высокими значениями в словаре
 my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
-
 new_my_dict = []
-
 for a_index in range(3):
     biggest_number = 0
 
@@ -31,7 +26,6 @@ for a_index in range(3):
             continue
         if b_value > biggest_number:
             biggest_number = b_value
-
     new_my_dict.append(biggest_number)
 
 for g in new_my_dict:
@@ -39,9 +33,7 @@ for g in new_my_dict:
     
 # Найдите три ключа с самыми высокими значениями в словаре
 my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
-
 new_my_dict = {}
-
 for a_index in range(3):
     biggest_key = ''
     biggest_value = 0
