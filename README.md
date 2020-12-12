@@ -1,1 +1,1 @@
-# nothing interesting here, just junk repository
+# junk repository
