@@ -10,5 +10,4 @@ def first_last():
     print('You\'ve created this list:', my_list)
     print('The first value in the list is', my_list[0], 'and the last value in the list is', my_list[-1])
 
-
 first_last()
