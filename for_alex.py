@@ -16,7 +16,6 @@ def calc():
         print('ERROR! Something went wrong. Please try again.')
     print('The result is:', first, action, second, '=', final)
 
-
 calc()
 
 
@@ -40,6 +39,5 @@ def new_fun():
     print('The amount of odd numbers between them is:', nechet)
     print('The sum of even numbers between them is:', sum_chet)
     print('The sum of odd numbers between them is:', sum_nechet)
-
 
 new_fun()
