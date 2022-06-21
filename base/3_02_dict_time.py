@@ -1,7 +1,3 @@
-# Необходимо создать три словаря и написать функцию,
-# которая сможет брать словари и производить их слияние в один
-
-
 def my_cars_fun():
     print('Function 1')
     car_1 = {"model": "Model S", "name": 'Tesla', "year": 2017}
@@ -17,11 +13,7 @@ def my_cars_fun():
     my_cars.update(my_cars_add)
     print('My cars:', my_cars)
 
-
 my_cars_fun()
-
-# Нужно написать функцию, которая позволит Вам конвертировать
-# указанное Вами число секунд в формат записи дни:часы:минуты:секунды
 
 
 def time():
@@ -36,19 +28,14 @@ def time():
     ss = ost
     print('Time is', dd, 'days', hh, 'hours', mm, 'minutes', 'and', ss, 'seconds')
     
-    
 time()
 
-# Нужно написать функцию, которая позволит Вам конвертировать
-# указанное Вами число секунд в формат записи дни:часы:минуты:секунды
+
 from datetime import timedelta
-
-
 def convert():
     print('Function 3 and it is the same as the previous one: ')
     x = int(input("Enter seconds: "))
     d = timedelta(seconds=x)
     print(d)
-
 
 convert()
