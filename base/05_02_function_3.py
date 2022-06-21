@@ -6,5 +6,4 @@ def summ():
         y += int(char)
     print('The sum of chars in', x, 'is', y)
 
-
 summ()
