@@ -1,6 +1,6 @@
-print('Let\'s create a database.\n')
-
 import sqlite3
+
+print('Let\'s create a database.\n')
 
 conn = sqlite3.connect('my_first_database.db')
 cursor = conn.cursor()
