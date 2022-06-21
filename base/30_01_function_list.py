@@ -64,7 +64,6 @@ def set_user_list_2():
         if int(user_list[i]) > 7:
             print("The element of the list", i + 1, "is having value", user_list[i], "and bigger than 7")
 
-
 set_user_list_2()
 
 
@@ -111,6 +110,5 @@ def set_user_list_3():
         if x in user_list_2:
             user_list_3.append(x)
     print('Here is a new list with the same values:', user_list_3)
-
 
 set_user_list_3()
