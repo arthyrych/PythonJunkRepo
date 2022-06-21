@@ -1,5 +1,5 @@
 print('Function 2')
-# Найдите три ключа с самыми высокими значениями в словаре
+
 my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
 x = my_dict['a']
 for key, value in my_dict.items():
@@ -15,7 +15,6 @@ for key, value in my_dict.items():
         z = value
 print(x, y, z)
 
-# Найдите три ключа с самыми высокими значениями в словаре
 my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
 new_my_dict = []
 for a_index in range(3):
@@ -31,7 +30,6 @@ for a_index in range(3):
 for g in new_my_dict:
     print(g)
     
-# Найдите три ключа с самыми высокими значениями в словаре
 my_dict = {'a': 645, 'b': 3987, 'c': 93, 'd': 111, 'e': 646, 'f': 20}
 new_my_dict = {}
 for a_index in range(3):
